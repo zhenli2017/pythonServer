@@ -29,8 +29,8 @@ def home():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     print logger.warning("fuck %s %s %s", "oooooo", "qq", "pp")
-
-    return json.dumps({"真": 1, "中": 2}, ensure_ascii=False)
+    loginMap = {"userName": "fuckTHD", "pwd": "123456"}
+    return json.dumps(loginMap, ensure_ascii=False)
 
 
 if __name__ == '__main__':
